@@ -40,7 +40,7 @@
                         <td class = "d-none d-md-block col-md-1"><p>W9</p></td>
                         <td class = "col-3 col-sm-3 col-md-2 text-center">
                             <button id="table1" type="checkbox" class="heart-button form-control px-0 py-2" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                <h6 id="demo1votes">♡ 91</h6>
+                                <h6 id="demo1votes"><span class="h6">♡</span> 91</h6>
                             </button></td>
                     </tr>
                     <tr>
@@ -222,7 +222,7 @@
             $(this).addClass('selected');
             number = parseInt($("#demo1votes").text().slice(1))+1
             console.log(number)
-            $("#demo1votes").text('♥&#xFE0E ' + number)
+            $("#demo1votes").text('♥ ' + number)
         })
 
         

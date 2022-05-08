@@ -91,3 +91,7 @@ tr{
 footer{
     height: 20vh;
 }
+
+span{
+    font-family: monospace;
+}
