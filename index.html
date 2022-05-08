@@ -12,12 +12,12 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class = "main-wrapper container-fluid">
-
+    <div class = "main-wrapper container-fluid ">
 
         <div class="centered-logo row align-items-center text-white">
             <h1 class="col-12" align="center"><img src="kapibara.png" width="60" height="60" class="d-inline-block align-top" alt="">
-                Kapibara</h1>
+                Kapibara
+            </h1>
         </div>
 
         <div class="search-div row align-items-center">
@@ -34,13 +34,13 @@
 
                 </thead>
                 <tbody>
-                    <tr data-toggle="collapse" data-target="#demo1" class="main-table accordion-toggle d-flex align-items-center">
-                        <td class = "col-4 col-sm-3 col-md-3">Liczba Reynoldsa</td>
-                        <td class = "col-5 col-sm-6 col-md-6"><h5 align="center">Re=v*d/v</h5></td>
-                        <td class = "d-none d-md-block col-md-1"><p>W9</p></td>
+                    <tr class="main-table accordion-toggle d-flex align-items-center">
+                        <td data-toggle="collapse" data-target="#demo1" class = "col-4 col-sm-3 col-md-3">Liczba Reynoldsa</td>
+                        <td data-toggle="collapse" data-target="#demo1" class = "col-5 col-sm-6 col-md-6"><h5 align="center">Re=v*d/v</h5></td>
+                        <td data-toggle="collapse" data-target="#demo1"  class = "d-none d-md-block col-md-1"><p>W9</p></td>
                         <td class = "col-3 col-sm-3 col-md-2 text-center">
-                            <button id="table1" type="checkbox" class="heart-button form-control px-0 py-2" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                <h6 id="demo1votes"><span class="h6">♡</span> 91</h6>
+                            <button data-toggle="a"  id="table1" type="checkbox" class="row heart-button form-control px-0 py-2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                <h6 id="demo1votes" align="center">♡ 97</h6>
                             </button></td>
                     </tr>
                     <tr>
@@ -63,7 +63,7 @@
                         <td class = "d-none d-md-block col-md-1"><p>W9</p></td>
                         <td class = "col-3 col-sm-3 col-sm-2 col-md-2">
                             <button id="table1" type="button" class="heart-button form-control px-0 py-2" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                <h6 id="demo1votes" align="center">♡ 15</h6>
+                                <h6 id="demo1votes" align="center">♡ 66</h6>
                             </button>
                         </td>
                     </tr>
@@ -109,7 +109,7 @@
             <p class="col-12 text-white" align="center">© 2022 Fuczekworks</p>
         </footer>
     </div>
-
+    
         <!-- Button trigger modal -->
 
     
@@ -220,6 +220,7 @@
         $("#table1").click(function() {
             $("#table1").removeClass('selected');
             $(this).addClass('selected');
+            console.log($("#demo1votes").text())
             number = parseInt($("#demo1votes").text().slice(1))+1
             console.log(number)
             $("#demo1votes").text('♥ ' + number)
